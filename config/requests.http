@@ -1,0 +1,22 @@
+GET http://127.0.0.1:3000/places
+
+###
+POST http://127.0.0.1:3000/places
+Content-Type: application/json
+
+{
+  "name":"Marshals",
+  "address":"12345 SE Burnside"
+}
+###
+GET http://127.0.0.1:3000/places/3
+###
+PATCH http://127.0.0.1:3000/places/5
+Content-Type: application/json
+
+{
+  "name":"Miltons coffee",
+  "address":"12345 SE Halsey"
+}
+###
+DELETE http://127.0.0.1:3000/places/6
